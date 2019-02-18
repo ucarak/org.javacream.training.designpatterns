@@ -1,19 +1,7 @@
-/*
- * Created on 20.04.2004
- */
 package org.javacream.books.warehouse;
 
 import java.io.Serializable;
 
-/**
- * 
- * @author Dr. Rainer Sawitzki
- * @company Javacream
- * @mailto training@rainer-sawitzki.de
- * 
- * ValueObject für die Books-Anwendung
- * 
- */
 public class Book implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -81,11 +69,6 @@ public class Book implements Serializable {
 		return result;
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see java.lang.Object#toString()
-	 */
 	public String toString() {
 		return (new StringBuffer("BookValue: isbn=").append(isbn).append(
 				", title=").append(title).append(", price=").append(price)

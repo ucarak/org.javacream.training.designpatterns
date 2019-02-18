@@ -2,18 +2,9 @@ package org.javacream.books.warehouse;
 
 import java.io.Serializable;
 
-/**
- * 
- * @author Dr. Rainer Sawitzki
- * @company Javacream
- * @mailto training@rainer-sawitzki.de
- *
- */
+
 public class BookException extends Exception {
     private static final long serialVersionUID = 3617860789252142136L;
-    /**
-     * Comment for <code>serialVersionUID</code>
-     */
 	public BookExceptionType type; 
 	public BookException(BookExceptionType type, String message){
 		super(message);
@@ -30,9 +21,6 @@ public class BookException extends Exception {
 		NOT_DELETED ("Book not deleted"),
 		TECHNICAL("Runtime Failed"),
 		CONSTRAINT("Constraint violation");
-		/**
-         * Comment for <code>serialVersionUID</code>
-         */
         private static final long serialVersionUID = 1L;
         private String messageType; 
 		private BookExceptionType(String messageType){

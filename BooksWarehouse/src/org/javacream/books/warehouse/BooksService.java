@@ -7,12 +7,6 @@ import java.util.Map;
 
 import org.apache.commons.lang3.SerializationUtils;
 
-/**
- * @author Dr. Rainer Sawitzki
- * @company Javacream
- * @mailto rainer.sawitzki@javacream.org
- * 
- */
 
 public class BooksService{
 
